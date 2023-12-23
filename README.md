@@ -13,11 +13,12 @@ In planning, states represent the conditions of the environment or system, while
 In the context of this project, planning domains refer to distinct problem-solving areas with specific rules, states, actions, and objectives. Each domain encapsulates a unique scenario or problem to solve.
 
 ### `SpareTireDomain`
-Description
+
+### Description
 
 The `SpareTireDomain` represents a scenario where the initial state comprises a flat tire on the axle and a spare tire in the trunk. The objective is to execute a series of actions to replace the flat tire with the spare tire.
 
-#### States
+### States
 
 This domain consists of:
 
