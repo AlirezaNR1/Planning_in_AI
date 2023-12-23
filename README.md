@@ -18,6 +18,9 @@ In the context of this project, planning domains refer to distinct problem-solvi
 
 The `SpareTireDomain` represents a scenario where the initial state comprises a flat tire on the axle and a spare tire in the trunk. The objective is to execute a series of actions to replace the flat tire with the spare tire.
 
+![blocks](https://github.com/AlirezaNR1/Planning_in_AI/assets/141549257/abd0ceac-9926-4e32-8024-b24ade7ef6a8)
+
+
 ### States
 
 This domain consists of:
@@ -43,6 +46,38 @@ The series of actions to reach the final state involves:
 - Spare tire
 - Flat tire
 - Locations: Ground, axle, trunk
+
+
+### `BlocksWorld`
+
+### Description
+
+The `BlocksWorld` represents a scenario where the initial state comprises a table with three blocks called A, B, C and block C is on block A and blocks A and B are on the table. The objective is to execute a series of actions to place block A on block B and block B on block C.
+
+### States
+
+This domain consists of:
+
+- Blcoks: Block A, B, C
+- Locations: On other blocks or on table
+
+### Actions
+
+The series of actions to reach the final state involves:
+
+1. Move black C from A to table
+   - Precondition: blcok C on Block A and table has an empty spot
+   - Effects: block C is on table and block A can be moved
+2. Move blcok B from table to block C
+   - Precondition: nothing on block B, nothing on block C.
+   - Effects: blcok B on blcok C.
+3. Move block A from table to block B
+   - Precondition: nothing on blcok A, nothing on block B.
+   - Effects: Block A on block B.
+
+### Objects
+
+- Blocks A, B, C
 
 ## Planning Methods
 
