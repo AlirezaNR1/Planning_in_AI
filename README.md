@@ -10,41 +10,40 @@ In planning, states represent the conditions of the environment or system, while
 
 ### Introduction to Planning Domains
 
-#### Definition of Domains
-
 In the context of this project, planning domains refer to distinct problem-solving areas with specific rules, states, actions, and objectives. Each domain encapsulates a unique scenario or problem to solve.
 
-##### `SpareTireDomain`
+### `SpareTireDomain`
 Description
 
-The SpareTireDomain represents a scenario where the initial state comprises a flat tire on the axle and a spare tire in the trunk. The objective is to execute a series of actions to replace the flat tire with the spare tire.
-States
+The `SpareTireDomain` represents a scenario where the initial state comprises a flat tire on the axle and a spare tire in the trunk. The objective is to execute a series of actions to replace the flat tire with the spare tire.
+
+#### States
 
 This domain consists of:
 
-    Tires: Spare tire and flat tire
-    Locations: Ground, axle, trunk
+- Tires: Spare tire and flat tire
+- Locations: Ground, axle, trunk
 
-Actions
+### Actions
 
 The series of actions to reach the final state involves:
 
-    Remove flat tire from axle
-        Precondition: Flat tire should be on the axle.
-        Effects: Moves the flat tire from the axle.
-    Remove spare tire from trunk
-        Precondition: Spare tire should be in the trunk.
-        Effects: Removes the spare tire from the trunk.
-    Put spare tire on axle
-        Effects: Places the spare tire onto the axle.
+1. Remove flat tire from axle
+   - Precondition: Flat tire should be on the axle.
+   - Effects: Moves the flat tire from the axle.
+2. Remove spare tire from trunk
+   - Precondition: Spare tire should be in the trunk.
+   - Effects: Removes the spare tire from the trunk.
+3. Put spare tire on axle
+   - Effects: Places the spare tire onto the axle.
 
-Objects
+### Objects
 
-    Spare tire
-    Flat tire
-    Locations: Ground, axle, trunk
+- Spare tire
+- Flat tire
+- Locations: Ground, axle, trunk
 
-Planning Methods
+## Planning Methods
 
-    Forward Search: A method that explores possible actions from the initial state to the goal.
-    Backward Search: A method that starts from the goal state and works backward to determine actions leading from it to the initial state.
+- Forward Search: A method that explores possible actions from the initial state to the goal.
+- Backward Search: A method that starts from the goal state and works backward to determine actions leading from it to the initial state.
