@@ -18,9 +18,6 @@ In the context of this project, planning domains refer to distinct problem-solvi
 
 The `SpareTireDomain` represents a scenario where the initial state comprises a flat tire on the axle and a spare tire in the trunk. The objective is to execute a series of actions to replace the flat tire with the spare tire.
 
-![blocks](https://github.com/AlirezaNR1/Planning_in_AI/assets/141549257/abd0ceac-9926-4e32-8024-b24ade7ef6a8)
-
-
 ### States
 
 This domain consists of:
@@ -54,6 +51,8 @@ The series of actions to reach the final state involves:
 
 The `BlocksWorld` represents a scenario where the initial state comprises a table with three blocks called A, B, C and block C is on block A and blocks A and B are on the table. The objective is to execute a series of actions to place block A on block B and block B on block C.
 
+![blocks](https://github.com/AlirezaNR1/Planning_in_AI/assets/141549257/abd0ceac-9926-4e32-8024-b24ade7ef6a8)
+
 ### States
 
 This domain consists of:
@@ -78,6 +77,38 @@ The series of actions to reach the final state involves:
 ### Objects
 
 - Blocks A, B, C
+
+### `DinnerDatesDomain`
+
+### Description
+
+The `DinnerDatesDomain` represents a scenario where the initial state comprises a house with garbage, uncooked meal and unwrapped gift. The objective is to execute a series of actions to take the trash out, cook the meal and wrap the gift.
+
+### States
+
+This domain consists of:
+
+- bag of garbage
+- clean hands
+- quiet place
+
+### Actions
+
+The series of actions to reach the final state involves:
+
+1. cook the meal:
+   - Precondition: hands should be clean.
+   - Effects: meal is cooked.
+2. wrap the gift:
+   - Precondition: it should be quiet.
+   - Effects: present is ready.
+3. carry the trash out
+   - Effects: garbage is out and hand are not clean.
+
+### Objects
+
+- garbage, clean hands, quiet place
+
 
 ## Planning Methods
 
